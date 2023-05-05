@@ -1,0 +1,60 @@
+/**
+     * The method findPage is used to find a single page by its name.
+     * @param aPageName A String, representing the name of the page we would like to search for.
+     * @return A Page, representing the page that was found from the search.
+     */
+    private Page findPage(String aPageName) {
+        boolean noPageMatch = true;
+        Iterator<Page> it = pages.iterator();
+        Page page = null;
+        String pageName;
+
+        while (noPageMatch && it.hasNext()) {
+            page = it.next();
+            pageName = page.getName();
+            if (pageName.equals(aPageName)) {
+                noPageMatch = false;
+            }
+        }
+
+        return page;
+    }
+
+
+    
+
+    /**
+     * The method pageHasChoices will ask a page whether it has choices.
+     * @param aPage A String, representing the name of the page
+     * @return A boolean, stating if the page has choices.
+     */
+    public String getInputTypeFrom(String aPageName)
+    {
+        Page page = findPage(aPageName);
+        return page.getInputType();
+    }
+    
+    /**
+     * getInputFrom returns the input from the specified page.
+     *
+     * @param aPageName The name of the page to retrieve the input from.
+     * @return The input from the specified page.
+     */
+    public String getInputFrom(String aPageName) 
+    {
+        Page page = findPage(aPageName);
+        return page.getInput();
+    }
+
+    /**
+     * getInputFrom returns the input from the specified page, given a list of choices.
+     *
+     * @param aPageName The name of the page to retrieve the input from.
+     * @param choices The list of choices to use when retrieving the input.
+     * @return A String, reprsenting the input from the specified page.
+     */
+    public String getInputFrom(String aPageName, ArrayList<String> choices)
+    {
+        Page page = findPage(aPageName);
+        return page.getInput(choices);
+    }

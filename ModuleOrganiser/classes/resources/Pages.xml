@@ -1,0 +1,79 @@
+<pages>
+    <page name="mainMenu">
+        <output value="Please enter a task number from the list below" />
+        <type value="choice" />
+        <choices> 
+            <choice value="1. Create a new module structure" />
+            <choice value="2. Create a new block/part/chapter structure" />
+            <choice value="3. Create a new TMA structure" />
+            <choice value="4. Create a new EMA structure" />
+            <choice value="5. Options" />
+        </choices>
+    </page>
+
+    <page name="createModule0">
+        <output value="Please enter the module code" />
+        <type value="text" />
+    </page>
+
+    <page name="createModule1">
+        <output value="Please enter the module name" />
+        <type value="text" />
+    </page>
+
+    <page name="createModule2"> 
+        <output value="Do you have a template document for your notes that you would like to use for this module?" />
+        <type value="choice" />
+        <choices>
+            <choice value="1. Yes" />
+            <choice value="2. No" />
+        </choices>
+    </page>
+
+    <page name="createModule3">
+        <output value="was selected as the notes template document for this module. Is this correct?" />
+        <type value="filePath" />
+        <choices>
+            <choice value="1. Yes" />
+            <choice value="2. No" />
+        </choices>
+    </page>
+
+    <page name="createModule4"> 
+        <output value="Do you have a template document for your TMAs that you would like to use for this module?" />
+        <type value="choice" />
+        <choices>
+            <choice value="1. Yes" />
+            <choice value="2. No" />
+        </choices>
+    </page>
+
+    <page name="createModule5">
+        <output value="was selected as the TMA template document for this module. Is this correct?" />
+        <type value="filePath" />
+        <choices>
+            <choice value="1. Yes" />
+            <choice value="2. No" />
+        </choices>
+    </page>
+
+    <page name="createPart0">
+        <output value="Which of the following modules is this new part or chapter for" />
+        <type value= "choice" />
+    </page>
+
+    <page name="createPart1">
+        <output value="Please enter the full title of the new chapter or part (e.g. 'Block 1, Part 2, Chapter 3: Module Title')" />
+        <type value="text" />
+    </page>
+
+    <page name="newTMA0">
+        <output value="Which of the following modules is this new TMA structure for" />
+        <type value= "choice" />
+    </page>
+
+    <page name="newEMA0">
+        <output value="Which of the following modules is this new EMA structure for" />
+        <type value= "choice" />
+    </page>
+</pages>
