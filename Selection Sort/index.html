@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<html>
+    <body>
+        <!-- div containing user input buttons -->
+        <div>
+            <form id="userForm">
+                <label for="fname">enter number of blocks:</label> <br />
+                <input type="text" id="blocksAmount" name="blocksAmount" />
+            </form>
+            <button id="createBlocksBtn" onClick="getBlockAmount()">
+                Create blocks
+            </button>
+            <button
+                id="shuffleBtn"
+                onClick="shuffleBlocks()"
+                class="hiddenElement"
+            >
+                Shuffle
+            </button>
+            <button id="sortBtn" onClick="sortBlocks()" class="hiddenElement">
+                Sort
+            </button>
+        </div>
+        <div class="selectionSort">
+            <p><b>Selection sort</b></p>
+        </div>
+
+        <!-- div which will contain blocks -->
+        <div id="div1" class="div one"></div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

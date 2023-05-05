@@ -1,0 +1,26 @@
+.div {
+    position: absolute;
+    background-color: black;
+    width: 800px;
+    height: 200px;
+    left: 20px;
+}
+
+.one {
+    top: 100px;
+}
+
+.two {
+    top: 400px;
+}
+
+.hiddenElement {
+    display: none;
+}
+
+.selectionSort {
+    position: absolute;
+    top: 60px;
+    left: 410px;
+    transform: translateX(-50%);
+}

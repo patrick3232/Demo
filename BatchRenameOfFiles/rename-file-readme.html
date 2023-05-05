@@ -1,0 +1,52 @@
+<head>
+<style>
+body {
+text-align:center;
+
+}
+</style>
+<title>rename-file.ps1</title>
+
+</head>
+
+<body>
+<h1>rename-file.ps1</h1>
+<p>01/05/2021</p>
+
+<h2>Powershell variables</h2>
+<p>A global variable is declared using $global:variableName </p>
+<p>A function can access and assign to the global variable using $global:variableName="what to assign goes here"</p>
+<p>A function can use a variable with the same name as the global variable but the variable will be lost when breaking out the function<p>
+
+<h2>Powershell popup window</h2>
+<a href="https://www.theictguy.co.uk/powershell-popup-window/#:~:text=To%20create%20a%20PowerShell%20PopUp%20Window%20can%20be,adding%20a%20bit%20of%20logic%20to%20the%20code">www.theictguy.co.uk</a>
+<p><u>Create new shell</u> <br>$Shell = New-Object -ComObject "WScript.Shell"</p>
+<p><u>Create the popup using the shell</u> <br >$Button = $Shell.Popup("Text here", timeout here{integer}, "popup title here", popuptype here{integer 1-5})</p>
+
+<h2>Extracting powershell substrings</h2>
+<a href="https://www.itechguides.com/powershell-substring/#:~:text=Method%201%3A%20Accessing%20the%20string%20directly.%20Method%202%3A,substrings%20of%20subdomain.domain.com%20are%20subdomain%2C%20domain%2C%20or%20com.">www.itechguides.com</a>
+<p>split is a method that can be used to extract substrings by a given divider. in the case below a dot was used. a similar method is Substring <br>which takes index numbers of the string as a start and end point of extracting the substring.</p>
+
+<p><u>code used</u> <br>$splitName=$item.name.split(".")</p>
+
+<h2>get-member</h2>
+<a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-member?view=powershell-7.1">docs.microsoft.com</a>
+<p>used to find members, properties, and methods of an object</p>
+
+<h2>write-host</h2>
+<p>display text to the user</p>
+<p><u>code used</u><br>write-host "The basename you entered was: $baseName"</p>
+
+<h2>read-host</h2>
+<p>used to get input from a user</p>
+<p><u>code used</u><br>$verify=read-host -prompt "Is this correct  yes(y)/no(n)"</p>
+
+<h2>get-childitem</h2>
+<p>list items in the current directory</p>
+<a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem?view=powershell-7.1">docs.microsoft.com</a>
+
+
+<h2>rename-item</h2>
+<p>renames specified items</p>
+<a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/rename-item?view=powershell-7.1">docs.microsoft.com</a>
+</body>
