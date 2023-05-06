@@ -1,4 +1,4 @@
-/**
+/**test
  * The class Main is used as the entry
  * point to the application.
  * 
